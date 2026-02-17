@@ -1,0 +1,20 @@
+# Nextflow files
+work/
+.nextflow/
+.nextflow.log*
+
+# Pipeline outputs
+Results_BactPhage-Annot/
+results/
+
+# System files
+.DS_Store
+__pycache__/
+*.pyc
+
+# Data
+*.fasta
+*.bam
+*.bai
+*.fastq
+*.gz
