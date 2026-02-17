@@ -1,8 +1,6 @@
 #!/usr/bin/env nextflow
 nextflow.enable.dsl=2
 
-println "\n=== Pipeline Bactérie/Phage – démarrage ===\n"
-
 // -------------------------------
 // Lecture et validation CSV
 // -------------------------------
@@ -92,24 +90,6 @@ DESCRIPTION
  qui signalent la présence potentielle d'un MGE. 
  Si une bactérie par exemple a acquis un nouvel élément mobile que la référence n'a pas,
  les reads peuvent être coupés (split-reads) 
-
-GÉNOME (---) | MGE (___)
-             |
--------|-----|----------    <-- Ton fragment d'ADN (150 bp)
-[ R1 >>>>>>>>>> ]           <-- Read 1 (100 bp) : 50bp génome + 50bp MGE
-        [ <<<<<<<<<< R2 ]   <-- Read 2 (100 bp) : 50bp MGE + 50bp génome
-             |
-          JONCTION
-
-
-REF : ---------------------------------
-             |
-R1 :  [ >>>>>|XXXXX]        <-- "Split-read" !
-             |
-R2 :         [XXXXX|<<<<< ] <-- "Split-read" aussi !
-             |
-             |--> Position X : MGEfinder note "CANDIDAT" ici.
-
 
 INPUT
 - sample_id : Identifiant de l'échantillon
@@ -1098,7 +1078,7 @@ CODE
 
 workflow {
 
-println "=== Pipeline Bactérie/Phage – workflow démarrage ==="
+println "=== Pipeline BactPhage-Annot – workflow démarrage ==="
 
     // ------ Nettoyage et Harmonisation ------
     // On envoie le flux brut du CSV vers le process de préparation
