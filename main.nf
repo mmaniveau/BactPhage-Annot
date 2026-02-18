@@ -1,8 +1,6 @@
 #!/usr/bin/env nextflow
 nextflow.enable.dsl=2
 
-println "\n=== Pipeline Bactérie/Phage – démarrage ===\n"
-
 // -------------------------------
 // Lecture et validation CSV
 // -------------------------------
@@ -1098,7 +1096,7 @@ CODE
 
 workflow {
 
-println "=== Pipeline Bactérie/Phage – workflow démarrage ==="
+println "=== Pipeline BactPhage-Annot – workflow démarrage ==="
 
     // ------ Nettoyage et Harmonisation ------
     // On envoie le flux brut du CSV vers le process de préparation
