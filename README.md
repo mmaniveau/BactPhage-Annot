@@ -38,10 +38,10 @@ Le fichier doit comporter les 5 colonnes suivantes (séparées par des virgules)
 ### 💡 Exemple de contenu
 Voici à quoi doit ressembler votre fichier (avec des chemins absolus recommandés) :
 
-| sample_id | fasta | bam | bai | ref_fasta |
+| sample_id, | fasta, | bam, | bai, | ref_fasta |
 | :--- | :--- | :--- | :--- | :--- |
-| Sp_1 | /Sp_1.fasta | /Sp_1.bam | /Sp_1.bam.bai | /Ancestral.fasta |
-| Sp_2 | /Sp_2.fasta | /Sp_2.bam | /Sp_2.bam.bai | /Ancestral.fasta |
+| Sp_1, | /Sp_1.fasta, | /Sp_1.bam, | /Sp_1.bam.bai, | /Ancestral.fasta |
+| Sp_2, | /Sp_2.fasta, | /Sp_2.bam, | /Sp_2.bam.bai, | /Ancestral.fasta |
 
 ## ⚙️ Paramètres de Configuration (nextflow.config)
 
