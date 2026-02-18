@@ -231,4 +231,5 @@ Hyatt, D., Chen, GL., LoCascio, P.F. et al. Prodigal: prokaryotic gene recogniti
 Eddy SR (2011) Accelerated Profile HMM Searches. PLoS Comput Biol 7(10): e1002195. https://doi.org/10.1371/journal.pcbi.1002195
 
 * **Prokka**
+  
 Torsten Seemann, Prokka: rapid prokaryotic genome annotation, Bioinformatics, Volume 30, Issue 14, July 2014, Pages 2068–2069, https://doi.org/10.1093/bioinformatics/btu153
