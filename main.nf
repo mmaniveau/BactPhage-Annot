@@ -625,18 +625,12 @@ DESCRIPTION
 DGR-package (DGRpy) identifie les DGRs. Ces systèmes permettent aux phages et bactéries
 de faire muter de manière ciblée certaines protéines (ex : récepteur phage) 
 pour s'adapter à leur cible. 
-Cette mutation a lieu grâce à une Reverse Transcriptase (RT), elle pourra faire muter une région 
-VR (Variable Region) d'un gène après transcription en ARN. Pour cela, elle va coller sa région TR correspondante
-(Template Region) par dessus la VR en modifiant ou non de manière aléatoire les adénines en une autre base.
-La région TR correspond à la VR avant mutation, une fois que la TR "écrase" la VR, les anciennes mutations sont perdues.
+
     --> Prédiction d'ORF via Prodigal (intégré)
     --> Identification des RT (Transcriptases Inverses) via HMMER
     --> Alignement TR-VR : Recherche de répétitions imparfaites des TR/VR
-    avec des mutations des adénines pour la VR (séparés par centaines de bases)
+    avec des mutations des adénines (séparés par centaines de bases)
 
-Exemple, les adénines du TR sont mutés en d'autres bases
-    TR : G A T A C A
-    VR : G C T G C T
 
 OUTPUT (dossier ${sample_id}/)
 - ..._DGR_csv.csv        : Résumé global (Score, Mismatches, types de mutations)
@@ -1196,4 +1190,5 @@ println "=== Pipeline BactPhage-Annot – workflow démarrage ==="
     
     generate_GFF(ch_for_gff)
 }
+
 
